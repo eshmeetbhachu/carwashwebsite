@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAR WASH</title>
+    <link rel="shortcut icon" href="/images/car wash.jpg" />
+    <style>
+      body {
+        background-image: url("/images/download.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0px;
+        padding: 0px;
+      }
+      .box1 {
+        background-color: white;
+        background-image: url("images/bg2.jpg");
+        background-repeat: repeat;
+        height: 2200px;
+        width: 35%;
+        margin-left: 60%;
+        border-width: 1px;
+        border-style: solid;
+      }
+      .box2 {
+        background-color: white;
+        height: 400px;
+        width: 50%;
+        position: fixed;
+        top: 200px;
+        margin-left: 50px;
+        border-radius: 15px;
+        background-image: url("images/finalcar3.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .box3 {
+        background-color: white;
+        height: 150px;
+        margin-left: 5%;
+        width: 90%;
+        position: relative;
+        top: 30px;
+        border-radius: 10%;
+        margin-bottom: 15px;
+        border: black;
+        border-width: 2px;
+        border-style: solid;
+      }
+      .box4 {
+        background-color: white;
+        height: 150px;
+        margin-left: 5%;
+        width: 90%;
+        position: relative;
+        top: 30px;
+        border-radius: 10%;
+        margin-bottom: 15px;
+        border: black;
+        border-width: 2px;
+        border-style: solid;
+      }
+      .box5 {
+        background-color: white;
+        height: 150px;
+        margin-left: 5%;
+        width: 90%;
+        position: relative;
+        top: 30px;
+        border-radius: 10%;
+        margin-bottom: 15px;
+        border: black;
+        border-width: 2px;
+        border-style: solid;
+      }
+      /* car wash */
+      .head {
+        position: fixed;
+        top: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        margin-left: 130px;
+        color: white;
+      }
+      /* logo image */
+      .img1 {
+        width: 70px;
+        height: 70px;
+        position: fixed;
+        top: 100px;
+        margin-left: 50px;
+        border-radius: 10px;
+      }
+      /* loading page */
+      .text1 {
+        position: fixed;
+        top: 150px;
+        color: white;
+        margin-left: 133px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /* main nav bar */
+      .navbar {
+        color: black;
+        position: fixed;
+        top: 200px;
+        margin-left: 370px;
+      }
+      .navbar ul {
+        padding: 0px;
+        list-style: none;
+      }
+      .navbar li {
+        display: inline;
+      }
+      .navbar a {
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-right: 15px;
+      }
+      /* top right view more */
+      .navbar1 {
+        position: relative;
+        top: 1px;
+        margin-left: 80%;
+      }
+      .navbar1 ul {
+        padding: 0px;
+        list-style: none;
+      }
+      .navbar1 a {
+        text-decoration: none;
+        color: #00a8f3;
+      }
+      /* read more in 3 boxex */
+      .navbar2 {
+        position: absolute;
+        top: 100px;
+        margin-left: 15px;
+      }
+      .navbar2 a {
+        text-decoration: none;
+        color: #00a8f3;
+      }
+      .navbar2 ul {
+        padding: 0px;
+        list-style: none;
+      }
+      /* view more at bottom */
+      .navbar3 {
+        position: absolute;
+        top: 1540px;
+        margin-left: 42%;
+      }
+      .navbar3 a {
+        text-decoration: none;
+        color: #0872a3;
+      }
+      .navbar3 ul {
+        padding: 0px;
+        list-style: none;
+      }
+      /* highlight of car wash */
+      .head1 {
+        color: black;
+        width: 300px;
+        position: fixed;
+        top: 230px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 65px;
+      }
+      /* high quality equipment */
+      .head2 {
+        position: relative;
+        top: 10px;
+        margin-left: 15px;
+        margin-right: 0px;
+        padding-bottom: 0px;
+      }
+      /* text below highlight of car wash */
+      .pa1 {
+        color: black;
+        width: 300px;
+        position: fixed;
+        top: 340px;
+        margin-left: 65px;
+      }
+      /* left order now */
+      .button {
+        background-color: #00a8f3;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        position: fixed;
+        top: 430px;
+        margin-left: 65px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      /* right order now */
+      .button1 {
+        background-color: #00a8f3;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 10px;
+        position: absolute;
+        top: 140px;
+        left: 70px;
+      }
+      /* read now below review */
+      .button2 {
+        background-color: #00a8f3;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 10px;
+        position: absolute;
+        top: 990px;
+        margin-left: 38%;
+      }
+      /* socials */
+      .img2 {
+        position: fixed;
+        top: 482px;
+        height: 38px;
+        margin-left: 550px;
+      }
+      /* tyre */
+      .img3 {
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        top: 25px;
+        border-radius: 10%;
+        margin-left: 250px;
+      }
+      /* front view of car */
+      .img4 {
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        top: 25px;
+        border-radius: 10%;
+        margin-left: 250px;
+      }
+      /* man washing car */
+      .img5 {
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        top: 25px;
+        border-radius: 10%;
+        margin-left: 250px;
+      }
+      /* promo */
+      .img6 {
+        width: 473px;
+        height: 150px;
+        margin-top: 50px;
+      }
+      /* review 1 */
+      .img7 {
+        width: 400px;
+        height: 200px;
+        position: absolute;
+        top: 920px;
+        margin-left: 2.7%;
+      }
+      /* review 2 */
+      .img8 {
+        width: 400px;
+        height: 200px;
+        position: absolute;
+        top: 1140px;
+        margin-left: 2.7%;
+      }
+      /* review 3 */
+      .img9 {
+        width: 400px;
+        height: 200px;
+        position: absolute;
+        top: 1360px;
+        margin-left: 2.7%;
+      }
+      /* gallery 1 */
+      .img10 {
+        width: 400px;
+        height: 200px;
+        position: absolute;
+        top: 1710px;
+        margin-left: 2.7%;
+        border-radius: 10%;
+      }
+      .img10:hover {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+
+      /* gallery 2 */
+      .img11 {
+        width: 400px;
+        height: 200px;
+        position: absolute;
+        top: 1930px;
+        margin-left: 2.7%;
+        border-radius: 10%;
+      }
+      .img11:hover {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+      /* copyrights */
+      .pa2 {
+        position: fixed;
+        top: 550px;
+        margin-left: 65px;
+      }
+      /* our features */
+      .pa3 {
+        margin: 0px;
+        position: relative;
+        top: 50px;
+        margin-left: 5%;
+        margin-bottom: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+      }
+      /* text in top 3 boxes */
+      .pa4 {
+        margin-left: 15px;
+        width: 250px;
+      }
+      /* what they say about us */
+      .pa5 {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 65px;
+        position: absolute;
+        top: 820px;
+      }
+      /* our gallery */
+      .pa6 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        position: absolute;
+        top: 1030px;
+        margin-left: 7%;
+      }
+      .container1 {
+        position: relative;
+      }
+      /* get 50% off your first order */
+      .title {
+        position: absolute;
+        top: 80px;
+        left: 70px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 170px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <p class="pa3">Our Features</p>
+      <nav class="navbar1">
+        <ul>
+          <li><a href="#">View More</a></li>
+        </ul>
+      </nav>
+      <div class="box3">
+        <h3 class="head2">Excellent Tyre Cleaning</h3>
+        <p class="pa4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+          aspernatur!
+        </p>
+        <nav class="navbar2">
+          <ul>
+            <li><a href="#">Read More</a></li>
+          </ul>
+        </nav>
+        <img class="img3" src="/images/tyre.avif" alt="" />
+      </div>
+      <div class="box4">
+        <h3 class="head2">Preventing Corrosion</h3>
+        <p class="pa4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+          aspernatur!
+        </p>
+        <nav class="navbar2">
+          <ul>
+            <li><a href="#">Read More</a></li>
+          </ul>
+        </nav>
+        <img class="img4" src="/images/front view.jpg" alt="" />
+      </div>
+      <div class="box5">
+        <h3 class="head2">High Quality Equipment</h3>
+        <p class="pa4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+          aspernatur!
+        </p>
+        <nav class="navbar2">
+          <ul>
+            <li><a href="#">Read More</a></li>
+          </ul>
+        </nav>
+        <img class="img5" src="/images/wash.jpg" alt="" />
+      </div>
+      <div class="container1">
+        <img class="img6" src="/images/promo.png" alt="" />
+        <div class="title">
+          Get <font color="#00a8f3">50%</font> Off your First Car Wash
+        </div>
+        <button class="button1">Order Now</button>
+        <button class="button2">Read More</button>
+        <nav class="navbar3">
+          <ul>
+            <li><a href="#">View More</a></li>
+          </ul>
+        </nav>
+        <p class="pa6">Our Project Gallery</p>
+      </div>
+      <p class="pa5">What They Say About Us</p>
+
+      <img class="img7" src="/images/review1.png" alt="" />
+      <img class="img8" src="/images/review2.png" alt="" />
+      <img class="img9" src="/images/review3.png" alt="" />
+      <img class="img10" src="/images/gallery.jpg" alt="" />
+      <img class="img11" src="/images/gallery2.jpg" alt="" />
+    </div>
+    <div class="box2"></div>
+
+    <div class="head">
+      <h1>Car Wash</h1>
+    </div>
+    <div class="text1">
+      <p>Loading Page</p>
+    </div>
+    <img class="img1" src="/images/car wash.jpg" alt="car" />
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="head1">
+      <h1>HIGHLIGHTS OF CAR WASH</h1>
+    </div>
+    <div class="pa1">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fugiat
+        dolorum itaque neque explicabo id?
+      </p>
+    </div>
+    <button class="button">Order Now</button>
+    <img class="img2" src="/images/social.jpg" alt="" />
+    <p class="pa2">Copyright &copy; 2017 My website</p>
+  </body>
+</html>
